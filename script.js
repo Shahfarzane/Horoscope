@@ -64,7 +64,7 @@ function addHoroscope() {
     }).then((result) => {
         console.log(result)
         if (result) {
-            document.getElementById("starSign").innerHTML = "Your star sign saved in th sessions, click on View button to check the results"
+            getHoroscope()
         }
     }).catch((error) => {
         console.log("Error: ", error)

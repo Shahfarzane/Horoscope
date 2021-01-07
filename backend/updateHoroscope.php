@@ -40,6 +40,7 @@ if(isset($_SERVER["REQUEST_METHOD"])){
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     if(isset($_SESSION['horoscope'])) {
+    $count = 0;
     $i = 0;
 
     foreach($signs as $sign) {
